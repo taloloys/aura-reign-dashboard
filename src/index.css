@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --color-wine-500: #932225;
+  --color-wine-700: #74191c;
+  --color-wine-900: #470d0f;
+
+  --color-gold-300: #F1E5D5;
+  --color-gold-500: #E2D0B9;
+  --color-gold-700: #C6AD8F;
+
+  --color-cream-100: #FFFFFF;
+  --color-cream-300: #F8F4EC;
+  --color-cream-500: #E8DECE;
+
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Montserrat", sans-serif;
+  --font-script: "Alex Brush", cursive;
+}
+
+@layer base {
+  body {
+    @apply bg-cream-300 text-wine-900 font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+/* Custom Scrollbar for a premium feel */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-cream-300;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gold-300 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gold-500;
+}
