@@ -411,6 +411,11 @@ export default function App() {
         {/* Modern Header Banner */}
         <header className="bg-wine-900 text-cream-100 py-3.5 px-5 sm:px-6 rounded-t-xl shadow-md border-b border-wine-700/50 flex items-center justify-between">
           <div className="flex items-center gap-3">
+            <img 
+              src="/aura-logo.png" 
+              alt="Aura Reign Logo" 
+              className="w-10 h-10 rounded-full object-cover border border-gold-500/60 shadow-sm shrink-0" 
+            />
             <div>
               <h1 className="text-xl sm:text-2xl tracking-widest font-serif font-bold text-gold-300 uppercase">
                 AURA REIGN
